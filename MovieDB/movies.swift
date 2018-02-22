@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class Movies{
+    var title: String?
+    var imgUrl: String?
+    var release: String?
+    var overall: String?
+    
+    init(MovieTitle: String, MovieImg: String, MovieReleaseData: String, MovieDes: String) {
+        title = MovieTitle
+        imgUrl = MovieImg
+        release = MovieReleaseData
+        overall = MovieDes
+    }
+}

@@ -10,8 +10,23 @@ import UIKit
 
 class MovieViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var year: UILabel!
+    @IBOutlet weak var desc: UITextView!
+   
+    var getDe: String?
+    var getIm: UIImage?
+    var getTitle: String?
+    var getDate: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        image.image = getIm
+        desc.text = getDe
+        name.text = getTitle
+        year.text = getDate
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +36,10 @@ class MovieViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

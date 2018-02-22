@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import MovieDB
+
 class ApiTest: XCTestCase {
     
     override func setUp() {
